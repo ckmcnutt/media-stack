@@ -16,6 +16,30 @@ indexers, SABnzbd does the downloading, and Jellyfin serves the result.
 All images are [LinuxServer.io](https://docs.linuxserver.io/) builds except
 Seerr, which comes from `ghcr.io/seerr-team/seerr`.
 
+## Contents
+
+- [Requirements](#requirements)
+- [The `/data` layout](#the-data-layout)
+- [Configuration you will need to change](#configuration-you-will-need-to-change)
+  - [Optional: parameterize the paths](#optional-parameterize-the-paths)
+- [Setup](#setup)
+  - [Linux](#linux)
+  - [macOS](#macos)
+  - [Windows](#windows)
+- [First-run configuration](#first-run-configuration)
+  - [1. SABnzbd](#1-sabnzbd-httplocalhost8080)
+  - [2. Prowlarr](#2-prowlarr-httplocalhost9696)
+  - [3. Sonarr and Radarr](#3-sonarr-httplocalhost8989-and-radarr-httplocalhost7878)
+  - [4. Jellyfin](#4-jellyfin-httplocalhost8096)
+  - [5. Seerr](#5-seerr-httplocalhost5055)
+- [Day-to-day operation](#day-to-day-operation)
+  - [Updating](#updating)
+  - [Backups](#backups)
+- [Troubleshooting](#troubleshooting)
+- [Security notes](#security-notes)
+
+---
+
 ---
 
 ## Requirements
